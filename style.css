@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.전체 {
+    background-color: yellowgreen;
+    width: 600px;
+    margin-top: 2200px;
+    position: relative;
+}
+
+.전체 .첫째 {
+    background-color: cadetblue;
+    width: 200px;
+    height: 200px;
+    /* 이동시 position이 있어야 한다 */
+    position: relative;
+    /* -> 주위에 아무런 영향을 주지 않는다 */
+    left: 300px;
+}
+
+.전체 .둘째 {
+    background-color: salmon;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    /* -> 하늘로 붕뜨면서 기준이 되는걸 찾는다 */
+    left: 100px;
+    top: 0;
+}
+
+.전체 .세째 {
+    background-color: lemonchiffon;
+    width: 200px;
+    height: 200px;
+}
+
+.fixed {
+    background-color: gray;
+    color: white;
+    position: fixed;
+    /* -> 화면을 기준으로 움직임(스크롤을 내려도 가만히 있는다) */
+    top: 100px;
+    right: 10px;
+    padding: 20px;
+}
